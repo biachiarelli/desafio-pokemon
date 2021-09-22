@@ -1,0 +1,23 @@
+.GridCards {
+  margin: 40px 0;
+
+  &__title {
+    font-weight: bold;
+    color: $blue;
+    margin-bottom: 24px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+
+    @include max-md {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px;
+    }
+    @include max-sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

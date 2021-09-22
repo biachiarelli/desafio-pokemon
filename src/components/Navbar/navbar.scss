@@ -1,0 +1,42 @@
+.Navbar {
+  margin-bottom: 120px;
+  background-color: $white;
+  @include max-md {
+    margin-bottom: 100px;
+  }
+
+  .navbar {
+    background-color: $white;
+
+    &-nav {
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+
+      @include max-md {
+        flex-direction: column;
+        background-color: $white;
+      }
+    }
+
+    &-toggler-icon {
+      color: $blue;
+    }
+  }
+
+  &__logo {
+    height: 80px;
+    @include max-md {
+      height: 60px;
+    }
+  }
+
+  .nav-link {
+    color: $blue;
+    font-weight: bold;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}

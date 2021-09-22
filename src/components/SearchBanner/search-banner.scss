@@ -1,0 +1,50 @@
+.SearchBanner {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  background-color: $light-yellow;
+  border-radius: 24px;
+  padding: 16px 40px;
+
+  @include max-md {
+    flex-direction: column-reverse;
+    display: flex;
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    color: $blue;
+    margin-bottom: 24px;
+    font-weight: 500;
+  }
+  &__input-group {
+    display: flex;
+    align-items: start;
+    grid-gap: 16px;
+  }
+  &__button {
+    color: $white;
+    background-color: $blue;
+    &-icon {
+      color: $white;
+    }
+  }
+
+  &__label {
+    color: $blue;
+    margin-bottom: 8px;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-img {
+      max-height: 360px;
+      @include max-md {
+        max-height: 280px;
+      }
+    }
+  }
+}
