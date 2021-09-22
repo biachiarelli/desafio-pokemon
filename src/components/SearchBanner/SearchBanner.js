@@ -25,14 +25,14 @@ function SearchBanner(props) {
     <section className="SearchBanner" id={props.id}>
       <div>
         <h1 className="SearchBanner__title">{props.title}</h1>
-        <label className="SearchBanner__label" for="pokemon">
+        <label className="SearchBanner__label" htmlFor="pokemon">
           Busque pelo o nome ou número
         </label>
         <div className="SearchBanner__input-group">
-          <div class="input-group mb-3">
+          <div className="input-group mb-3">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               aria-label="pokemon"
               id="pokemon"
               name="pokemon"
@@ -44,7 +44,7 @@ function SearchBanner(props) {
           {showButton && (
             <button
               type="submit"
-              class="btn SearchBanner__button"
+              className="btn SearchBanner__button"
               onClick={cleanSearch}
             >
               Limpar

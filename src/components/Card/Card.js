@@ -50,7 +50,7 @@ function Card(props) {
       <img className="Card__img" src={item.img} alt={item.name} />
       <div className="Card__tag-group">
         {item.type.map((type) => (
-          <Tag label={type} color={getColorType(type)} />
+          <Tag key={type} label={type} color={getColorType(type)} />
         ))}
       </div>
 
