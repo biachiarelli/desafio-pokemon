@@ -14,7 +14,7 @@ https://desafio-pokemon.herokuapp.com/
 
 ### **Imagens do sistema**
 
-![](https://github.com/biachiarelli/desafio-pokemon/blob/main/img.png)
+![](https://github.com/biachiarelli/desafio-pokemon/blob/master/img.png)
 
 
 ## **Instruções para instalação**
